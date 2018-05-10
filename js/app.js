@@ -64,6 +64,15 @@ class Player{
   }
   update() {
     if (this.y < 0) {
+swal({
+    allowEscapeKey: false,
+    allowOutsideClick: false,
+    title: 'Congratulations! You Won!',
+    type: 'success',
+    confirmButtonColor: '#02ccba',
+    confirmButtonText: 'Play again!'
+  })
+
       this.x = 200;
       this.y = 380;
     }
